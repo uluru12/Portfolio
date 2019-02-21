@@ -52,6 +52,12 @@
             font-family: 'Courgette', cursive;
         }
 
+        .btn-col {
+            color: black;
+            background-color: white;
+            border-color: white;
+        }
+
         #p2-txt {
             /*자기소개 폰트크기 18,16,14*/
             color: ;
@@ -62,27 +68,36 @@
         #p3-top-txt {
             /*활동내역 제목*/
             width: 720px;
-            background-color: #f9edcc;
             text-align: center;
             padding: 15px;
             margin-bottom: -15px;
             font-size: 23px;
         }
 
+        .p3-link {
+            font-size: 15px;
+            text-decoration: underline;
+            color: gray;
+        }
+
         #p3-txt {
             /*활동내역 목록*/
             width: 720px;
-            background-color: #f9edcc;
             text-align: center;
             font-size: 14px;
             padding-bottom: 500px;
             /*Carousel margin 같이 조정*/
         }
 
+        .carousel-top {
+            /*슬라이드 소제목*/
+            font-weight: bold;
+        }
+
         .carousel-caption {
-            /*슬라이드 세부 내용*/
-            color: black;
-            background-color: #eae9e5;
+            /*슬라이드 내용*/
+            color: white;
+            background-color: black;
         }
 
         #P4 {
@@ -95,7 +110,6 @@
             /*언론 및 방송 제목*/
             width: 720px;
             color: black;
-            background-color: beige;
             text-align: center;
             padding: 15px;
             font-size: 23px;
@@ -105,13 +119,11 @@
             width: 720px;
             margin-right: 15px;
             margin-left: -15px;
-            background-color: beige;
         }
 
         #p4-pack {
             /*언론 내용 전체*/
             width: 220px;
-            background-color: beige;
             padding-bottom: 30px;
             text-align: center;
         }
@@ -144,7 +156,6 @@
             /*수상내역 제목*/
             width: 720px;
             color: black;
-            background-color: #f7ecc0;
             text-align: center;
             padding-top: 20px;
             font-size: 23px;
@@ -156,7 +167,6 @@
             margin-right: 15px;
             margin-left: -15px;
             padding-bottom: 20px;
-            background-color: #f7ecc0;
             font-size: 15px;
         }
 
@@ -191,28 +201,28 @@
                     <div class="p1-name">
                         <p>HELLO I'M</p>
                         <p style="font-size: 27px;">P1, 김학선 포트폴리오(가제)</p>
-                        <p style="font-size: 14px; margin-bottom: 110px;">made by self</p>
+                        <p style="font-size: 14px; margin-bottom: 160px;">made by self</p>
                     </div>
                 </div>
                 <div class="button-txt" style="text-align: center; flex-wrap: nowrap;">
                     <a href="#P2">
-                        <button type="button" class="btn btn-dark">
+                        <button type="button" class="btn-col btn btn-dark">
                             Introduce
                         </button>
                     </a>
                     <a href="#P3">
-                        <button type="button" class="btn btn-light">
+                        <button type="button" class="btn-col btn btn-light">
                             Experiences
                         </button>
                     </a>
                     <a href="#P4">
-                        <button type="button" class="btn btn-warning">
-                            News&Broadcast
+                        <button type="button" class="btn-col btn btn-warning">
+                            News & Broadcast
                         </button>
                     </a>
                     <a href="#P5">
-                        <button type="button" class="btn btn-info">
-                            Awards&Achievements
+                        <button type="button" class="btn-col btn btn-info">
+                            Awards & Achievements
                         </button>
                     </a>
                 </div>
@@ -234,7 +244,10 @@
         <div id="P3" style="display: flex; justify-content: center; flex-wrap: wrap;">
             <div style="width: ;">
                 <div id="p3-top-txt">
-                    <p style="font-family: 'Courgette', cursive;">Experiences(420*477)</p>
+                    <p style="font-family: 'Courgette', cursive;">Experiences(420*477)<br>
+                        <a class="p3-link" target="_blank" rel="noopener noreferrer" href="experience.html">
+                        more about(new tab)</a>
+                    </p>
                 </div>
                 <div id="p3-txt">
                     UnivExpo Jeonju 서포터즈 팀장<br>
@@ -244,40 +257,63 @@
                     Story Creator 3기 멘토<br>
                     영업인재 마스터 프로젝트 1~2기 기획 및 운영<br>
                     청춘부보상 대장정 10~11기 기획 및 운영<br>
-                    청춘부보상 대장정 10~11기 기획 및 운영<br>
-                    CODE EIGHT 코딩스쿨 수료<br>
+                    CODE 8IGHT 코딩스쿨 수료<br>
                     &nbsp;
                 </div>
             </div>
         </div>
 
         <div style="display: flex; justify-content: center;">
-            <div style="width: 420px; margin-top: -500px; margin-bottom: 20px;">
+            <div style="width: 720px; margin-top: -500px; margin-bottom: 20px;">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="ocean1.jpg">
                             <div class="carousel-caption">
-                                <h6>소제목(링크 할지 말지 고민)</h6>
-                                <p>내용</p>
+                                <h6 class="carousel-top">UnivExpo 서포터즈</h6>
+                                <p>내용이 길어지면 이렇게 표시됩니다~~~~~~~~~~~~~~~~~~~~~~</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="ocean2.jpg">
                             <div class="carousel-caption">
-                                <h6>소제목(링크 할지 말지 고민)</h6>
+                                <h6 class="carousel-top">PT 경진대회 프레젠터</h6>
                                 <p>내용</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="ocean3.jpg">
                             <div class="carousel-caption">
-                                <h6>소제목(링크 할지 말지 고민)</h6>
+                                <h6 class="carousel-top">청춘부보상 루트장</h6>
+                                <p>내용</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ocean2.jpg">
+                            <div class="carousel-caption">
+                                <h6 class="carousel-top">영마프 1~2기 운영</h6>
+                                <p>내용</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ocean3.jpg">
+                            <div class="carousel-caption">
+                                <h6 class="carousel-top">국토대장정 2개 기수 운영</h6>
+                                <p>내용</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ocean1.jpg">
+                            <div class="carousel-caption">
+                                <h6 class="carousel-top">CODE 8IGHT 코딩스쿨</h6>
                                 <p>내용</p>
                             </div>
                         </div>
@@ -297,7 +333,7 @@
 
         <div id="P4" style="display: flex; justify-content: center;">
             <div id="p4-top-txt">
-                <p style="font-family: 'Courgette', cursive;">News&Broadcast(220*240)</p>
+                <p style="font-family: 'Courgette', cursive;">News & Broadcast</p>
             </div>
         </div>
 
