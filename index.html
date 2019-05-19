@@ -23,11 +23,12 @@
     <meta property="og:url" content="https://uluru12.github.io/Portfolio/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Portfolio">
-    <meta property="og:description" content="코딩연습">
+    <meta property="og:description" content="내가 걸어온 길">
     <meta property="og:image" content="ocean3.jpg">
     <style>
         .container {
-            width: 720px;
+            width: 100%;
+            min-width: 600px;
         }
 
         #p1-txt {
@@ -38,7 +39,7 @@
         .p1-right-txt {
             /*표지 우측 상단*/
             text-align: right;
-            margin-top: -440px;
+            margin-top: -420px;
             font-size: 12px;
         }
 
@@ -60,8 +61,7 @@
 
         .p2-top-txt {
             margin: 40px;
-            font-size: 27px;
-            font-style: italic;
+            font-size: 21px;
             text-align: center;
         }
 
@@ -73,7 +73,7 @@
 
         #p3-top-txt {
             /*활동내역 제목*/
-            width: 720px;
+            width: 100%;
             text-align: center;
             padding: 15px;
             margin-bottom: -15px;
@@ -89,7 +89,7 @@
 
         #p3-txt {
             /*활동내역 목록*/
-            width: 720px;
+            width: 100%;
             text-align: center;
             font-size: 15px;
             padding-bottom: 500px;
@@ -113,14 +113,14 @@
         }
 
         #P4 {
-            width: 720px;
+            width: 100%;
             margin-right: 15px;
             margin-left: -15px;
         }
 
         #p4-top-txt {
             /*언론 및 방송 제목*/
-            width: 720px;
+            width: 100%;
             text-align: center;
             padding: 15px;
             margin-top: 30px;
@@ -128,15 +128,13 @@
         }
 
         #p4-border {
-            width: 720px;
             margin-top: 20px;
-            margin-right: 15px;
-            margin-left: -15px;
         }
 
         #p4-pack {
             /*언론 내용 전체*/
-            width: 220px;
+            width: 30%;
+            min-width: 300px;
             padding-bottom: 30px;
             text-align: center;
         }
@@ -160,7 +158,7 @@
         }
 
         #P5 {
-            width: 720px;
+            width: 100%;
             margin-top: 30px;
             margin-right: 15px;
             margin-left: -15px;
@@ -168,7 +166,7 @@
 
         #p5-top-txt {
             /*수상내역 제목*/
-            width: 720px;
+            width: 100%;
             text-align: center;
             padding-top: 20px;
             font-size: 25px;
@@ -176,7 +174,7 @@
 
         #p5-pack {
             /*수상 내역 전체*/
-            width: 720px;
+            width: 100%;
             margin-right: 15px;
             margin-left: -15px;
             padding-bottom: 60px;
@@ -203,17 +201,17 @@
     <script src="" async defer></script>
     <div class="container">
         <div id="P1" style="display: flex; justify-content: center;">
-            <img src="black.jpg" width="860px;" height="450px;">
+            <img src="black.jpg" width="100%;" height="450px;">
         </div>
         <div>
             <div id="p1-txt">
                 <div class="p1-right-txt">
-                    여기에 뭘 넣을까
+
                 </div>
                 <div class="p1-center-txt">
                     <div class="p1-name">
                         <p>HELLO I'M</p>
-                        <p style="font-size: 27px;">P1, 김학선 포트폴리오(가제)</p>
+                        <p style="font-size: 27px;">학선's 포트폴리오</p>
                         <p style="font-size: 14px; margin-bottom: 160px;">made by self</p>
                     </div>
                 </div>
@@ -242,26 +240,10 @@
             </div>
         </div>
 
-        <div class="p2-top-txt">
-            "키워드를 여기에"
-        </div>
-        <div id="P2" style="display: flex; justify-content: center;">
-            <div style="float: left; margin: 10px; margin-top: 10px;">
-                <img src="profile.jpg" width="360px;" height="360px;">
-            </div>
-            <div id="p2-txt">
-                <p>자기소개 적기(큰 글자 18, 기본 16, 작은 글자 14)</p>
-                <p>좌측 사진, 키워드 찾아보기</p>
-            </div>
-        </div>
-
-
         <div id="P3" style="display: flex; justify-content: center; flex-wrap: wrap;">
             <div>
                 <div id="p3-top-txt">
                     <p style="font-family: 'Courgette', cursive;">Experiences<br>
-                        <a class="p3-link" target="_blank" rel="noopener noreferrer" href="experience.html">
-                            more about(new tab)</a>
                     </p>
                 </div>
                 <div id="p3-txt">
@@ -279,7 +261,7 @@
         </div>
 
         <div style="display: flex; justify-content: center;">
-            <div style="width: 720px; margin-top: -500px; margin-bottom: 20px;">
+            <div style="width: 100%; max-width: 960px; height: 100%; margin-top: -500px; margin-bottom: 20px;">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -291,7 +273,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="coding.jpg">
+                            <img src="coding.jpg" style="width: 100%; height: 480px;">
                             <div class="carousel-caption">
                                 <h6 class="carousel-top">CODE 8IGHT 코딩교육</h6>
                                 <p>19.02<br></p>
@@ -300,7 +282,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="bubo3.jpg">
+                            <img src="bubo3.jpg" style="width: 100%; height: 480px;">
                             <div class="carousel-caption">
                                 <h6 class="carousel-top">국토대장정 2개 기수 운영</h6>
                                 <p>17.10 ~ 18.08<br></p>
@@ -311,7 +293,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="master.jpg">
+                            <img src="master.jpg" style="width: 100%; height: 480px;">
                             <div class="carousel-caption">
                                 <h6 class="carousel-top">취업역량강화 프로그램 2개 기수 운영</h6>
                                 <p>17.01 ~ 04<br></p>
@@ -321,7 +303,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="bubo2.jpg">
+                            <img src="bubo2.jpg" style="width: 100%; height: 480px;">
                             <div class="carousel-caption">
                                 <h6 class="carousel-top">국토대장정 팀장</h6>
                                 <p>16.11 ~ 17.01<br></p>
@@ -331,7 +313,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="pre.jpg">
+                            <img src="pre.jpg" style="width: 100%; height: 480px;">
                             <div class="carousel-caption">
                                 <h6 class="carousel-top">PT 경진대회 프레젠터</h6>
                                 <p>16.11<br></p>
@@ -341,7 +323,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img src="univ.jpg">
+                            <img src="univ.jpg" style="width: 100%; height: 480px;">
                             <div class="carousel-caption">
                                 <h6 class="carousel-top">UnivExpo 서포터즈 팀장</h6>
                                 <p>16.09 ~ 10<br></p>
@@ -369,9 +351,9 @@
             </div>
         </div>
 
-        <div id="p4-border" style="display: flex; justify-content: space-around;">
+        <div id="p4-border" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
             <div id="p4-pack">
-                <img src="10.jpg" width="220px;" height="270px;">
+                <img src="10.jpg" width="100%;" height="300px;">
                 <div class="p4-sub-txt">
                     <p>전주시 아동복지 성금 조성</p>
                     <div class="p4-main-txt">
@@ -381,8 +363,9 @@
                     </div>
                 </div>
             </div>
+
             <div id="p4-pack">
-                <img src="kbs.jpg" width="220px;" height="270px;">
+                <img src="kbs.jpg" width="100%;" height="300px;">
                 <div class="p4-sub-txt">
                     <p>KBS 투데이 전북 출연</p>
                     <div class="p4-main-txt">
@@ -390,8 +373,9 @@
                     </div>
                 </div>
             </div>
+
             <div id="p4-pack">
-                <img src="11.jpg" width="220px;" height="270px;">
+                <img src="11.jpg" width="100%;" height="300px;">
                 <div class="p4-sub-txt">
                     <p>복지시설 기부금 전달</p>
                     <div class="p4-main-txt">
@@ -412,21 +396,18 @@
 
         <div id="p5-pack" style="display: flex; justify-content: space-around;">
             <div class="p5-txt">
-                <p>18.12.03 &nbsp; 6대 핵심역량인재상(인성부문), &nbsp; 전북대학교 총장</p>
-                <p>17.10.13 &nbsp; 6대 핵심역량인재상(소통부문), &nbsp; 전북대학교 총장</p>
+                <p>18.12.03 &nbsp; 6대 핵심역량인재상(인성부문), &nbsp; OO대학교 총장</p>
+                <p>17.10.13 &nbsp; 6대 핵심역량인재상(소통부문), &nbsp; OO대학교 총장</p>
                 <p>17.03.26 &nbsp; 프로젝트 기획 유공, &nbsp; 대통령직속 청년위원회</p>
                 <p>17.01.20 &nbsp; 최우수 팀, &nbsp; 이춘석 국회의원실</p>
                 <p>17.01.20 &nbsp; 최우수 팀장, &nbsp; 이춘석 국회의원실</p>
                 <p>17.01.20 &nbsp; 최우수 기획단, &nbsp; 전라북도 자원봉사센터</p>
-                <p>16.11.25 &nbsp; 전라북도 프레젠테이션 대회 장려상, &nbsp; 전북대학교</p>
-            </div>
-            <div style="margin-top: 80px;">
-                <img src="award.jpg" width="180px;" height="180px;">
+                <p>16.11.25 &nbsp; 전라북도 프레젠테이션 대회 장려상, &nbsp; OO대학교</p>
             </div>
         </div>
 
         <div style="display: flex; justify-content: center;">
-            <img src="black.jpg" width="860px;" height="100px;">
+            <img src="black.jpg" width="100%;" height="100px;">
         </div>
         <div class="button-txt" style="text-align: center; margin-top: -120px;">
             <a href="#P1">
